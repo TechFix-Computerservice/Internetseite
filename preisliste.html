@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechFix Computerservice - Preisliste</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-blue-900/95 backdrop-blur text-white p-4 shadow-md">
+    <div class="container mx-auto flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <img src="logo.png" alt="TechFix Computerservice Logo" class="h-12 w-12 rounded-md shadow">
+        <div>
+          <h1 class="text-2xl font-bold">TechFix Computerservice</h1>
+          <p class="text-sm text-blue-200">PC Reparaturen & IT-Dienstleistungen</p>
+        </div>
+      </div>
+      <nav>
+        <ul class="flex space-x-6 text-lg font-medium">
+          <li><a href="index.html" class="hover:text-blue-300">Startseite</a></li>
+          <li><a href="leistungen.html" class="hover:text-blue-300">Leistungen</a></li>
+          <li><a href="preisliste.html" class="hover:text-blue-300">Preisliste</a></li>
+          <li><a href="oeffnungszeiten.html" class="hover:text-blue-300">Öffnungszeiten</a></li>
+          <li><a href="mitarbeiter.html" class="hover:text-blue-300">Mitarbeiter</a></li>
+          <li><a href="kontakt.html" class="hover:text-blue-300">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Preisliste -->
+  <section class="py-16 px-6 md:px-20">
+    <h2 class="text-3xl font-semibold text-blue-900 mb-8">Unsere Preisliste</h2>
+
+    <!-- Service-Leistungen -->
+    <div class="overflow-x-auto bg-white shadow-md rounded-2xl mb-10">
+      <table class="w-full text-left border-collapse">
+        <thead class="bg-blue-900 text-white">
+          <tr>
+            <th class="p-4">Leistung</th>
+            <th class="p-4">Beschreibung</th>
+            <th class="p-4 text-right">Preis</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-t">
+            <td class="p-4 font-bold">Innenreinigung</td>
+            <td class="p-4">Komplettreinigung + neue Wärmeleitpaste</td>
+            <td class="p-4 text-right">65 €</td>
+          </tr>
+          <tr class="border-t">
+            <td class="p-4 font-bold">Softwareinstallation</td>
+            <td class="p-4">Windows XP – Windows 11, Antivirusprogramme u. v. m.</td>
+            <td class="p-4 text-right">30 €</td>
+          </tr>
+          <tr class="border-t">
+            <td class="p-4 font-bold">Virenbeseitigung</td>
+            <td class="p-4">Trojaner, Malware etc.</td>
+            <td class="p-4 text-right">25 €</td>
+          </tr>
+          <tr class="border-t">
+            <td class="p-4 font-bold">Problemdiagnose</td>
+            <td class="p-4">Fehleranalyse & gezielte Problembehebung</td>
+            <td class="p-4 text-right">40 €</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Komponenten-Austausch -->
+    <div class="overflow-x-auto bg-white shadow-md rounded-2xl">
+      <table class="w-full text-left border-collapse">
+        <thead class="bg-blue-900 text-white">
+          <tr>
+            <th class="p-4">Komponente</th>
+            <th class="p-4 text-right">Preis</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-t">
+            <td class="p-4 font-bold">Mainboard Austausch</td>
+            <td class="p-4 text-right">100 € – 450 €</td>
+          </tr>
+          <tr class="border-t">
+            <td class="p-4 font-bold">Netzteil Austausch</td>
+            <td class="p-4 text-right">50 € – 150 €</td>
+          </tr>
+          <tr class="border-t">
+            <td class="p-4 font-bold">HDD/SSD Austausch</td>
+            <td class="p-4 text-right">50 € – 150 €</td>
+          </tr>
+          <tr class="border-t">
+            <td class="p-4 font-bold">Lüfter Austausch</td>
+            <td class="p-4 text-right">60 € – 120 €</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer class="bg-blue-900 text-white text-center p-6 mt-10">
+    <p>&copy; 2025 TechFix Computerservice</p>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
