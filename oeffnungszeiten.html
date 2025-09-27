@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechFix Computerservice - Öffnungszeiten</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-blue-900/95 backdrop-blur text-white p-4 shadow-md">
+    <div class="container mx-auto flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <img src="logo.png" alt="TechFix Computerservice Logo" class="h-12 w-12 rounded-md shadow">
+        <div>
+          <h1 class="text-2xl font-bold">TechFix Computerservice</h1>
+          <p class="text-sm text-blue-200">PC Reparaturen & IT-Dienstleistungen</p>
+        </div>
+      </div>
+      <!-- Desktop-Menü -->
+      <nav class="hidden md:block">
+        <ul class="flex space-x-6 text-lg font-medium">
+          <li><a href="index.html" class="hover:text-blue-300">Startseite</a></li>
+          <li><a href="leistungen.html" class="hover:text-blue-300">Leistungen</a></li>
+          <li><a href="preisliste.html" class="hover:text-blue-300">Preisliste</a></li>
+          <li><a href="oeffnungszeiten.html" class="hover:text-blue-300">Öffnungszeiten</a></li>
+          <li><a href="mitarbeiter.html" class="hover:text-blue-300">Mitarbeiter</a></li>
+          <li><a href="kontakt.html" class="hover:text-blue-300">Kontakt</a></li>
+        </ul>
+      </nav>
+      <!-- Mobile-Menü Button -->
+      <button id="menu-btn" class="md:hidden">
+        <i data-lucide="menu" class="w-8 h-8"></i>
+      </button>
+    </div>
+    <!-- Mobile-Menü -->
+    <nav id="mobile-menu" class="hidden md:hidden bg-blue-800 mt-2 rounded-lg p-4">
+      <ul class="flex flex-col space-y-3 text-lg">
+        <li><a href="index.html" class="hover:text-blue-300">Startseite</a></li>
+        <li><a href="leistungen.html" class="hover:text-blue-300">Leistungen</a></li>
+        <li><a href="preisliste.html" class="hover:text-blue-300">Preisliste</a></li>
+        <li><a href="oeffnungszeiten.html" class="hover:text-blue-300">Öffnungszeiten</a></li>
+        <li><a href="mitarbeiter.html" class="hover:text-blue-300">Mitarbeiter</a></li>
+        <li><a href="kontakt.html" class="hover:text-blue-300">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Öffnungszeiten -->
+  <section class="py-16 px-6 md:px-20">
+    <h2 class="text-3xl font-semibold text-blue-900 mb-8">Unsere Öffnungszeiten</h2>
+    <div class="max-w-lg mx-auto overflow-x-auto bg-white shadow-md rounded-2xl p-6">
+      <ul class="divide-y divide-gray-200 text-lg min-w-[300px]">
+        <li class="flex justify-between py-3">
+          <span>Montag</span><span>08:00 – 13:00 & 14:00 – 18:00 Uhr</span>
+        </li>
+        <li class="flex justify-between py-3">
+          <span>Dienstag</span><span>08:00 – 13:00 & 14:00 – 18:00 Uhr</span>
+        </li>
+        <li class="flex justify-between py-3">
+          <span>Mittwoch</span><span>08:00 – 13:00 & 14:00 – 18:00 Uhr</span>
+        </li>
+        <li class="flex justify-between py-3">
+          <span>Donnerstag</span><span>08:00 – 13:00 & 14:00 – 18:00 Uhr</span>
+        </li>
+        <li class="flex justify-between py-3">
+          <span>Freitag</span><span>08:00 – 13:00 & 14:00 – 18:00 Uhr</span>
+        </li>
+        <li class="flex justify-between py-3">
+          <span>Samstag</span><span>08:00 – 13:00 & 14:00 – 16:00 Uhr</span>
+        </li>
+        <li class="flex justify-between py-3">
+          <span>Sonntag</span><span>Geschlossen</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="bg-blue-900 text-white text-center p-6 mt-10">
+    <p>&copy; 2025 TechFix Computerservice</p>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+</body>
+</html>
