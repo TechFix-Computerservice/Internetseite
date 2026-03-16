@@ -1,136 +1,69 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TechFix Computerservice</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TechFix Computerservice</title>
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/lucide@latest"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
 
-  <style>
-    body {
-      font-family: system-ui, sans-serif;
-    }
-  </style>
+<style>
+body {
+  font-family: system-ui;
+  background: linear-gradient(to bottom, #020617, #0f172a);
+}
+.glow { box-shadow: 0 0 25px rgba(59,130,246,0.5); }
+.fade { animation: fade 1s ease; }
+@keyframes fade { from{opacity:0; transform:translateY(20px);} to{opacity:1;} }
+</style>
 </head>
 
-<body class="bg-gray-50 text-gray-800">
+<body class="text-white">
 
 <!-- HEADER -->
-<header class="bg-white shadow-md sticky top-0 z-50">
-  <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
-    <div class="flex items-center gap-3">
-      <img src="logo.png" class="h-12 w-12 rounded-md">
-      <div>
-        <h1 class="font-bold text-xl">TechFix</h1>
-        <p class="text-sm text-gray-500">Computerservice</p>
-      </div>
-    </div>
+<header class="bg-white/10 backdrop-blur border-b border-white/10 sticky top-0 z-50">
+<div class="max-w-7xl mx-auto flex justify-between items-center p-4">
 
-    <nav class="hidden md:flex gap-6 font-medium">
-      <a href="index.html">Start</a>
-      <a href="leistungen.html">Leistungen</a>
-      <a href="preisliste.html">Preise</a>
-      <a href="kontakt.html">Kontakt</a>
-    </nav>
+<div class="flex items-center gap-3">
+<img src="logo.png" class="h-12 glow rounded-xl">
+<div>
+<h1 class="font-bold">TechFix</h1>
+<p class="text-xs text-blue-300">Computerservice</p>
+</div>
+</div>
 
-    <a href="kontakt.html" class="bg-blue-900 text-white px-5 py-2 rounded-lg shadow hover:bg-blue-700 transition">
-      Termin
-    </a>
-  </div>
+<nav class="hidden md:flex gap-6">
+<a href="index.html">Start</a>
+<a href="leistungen.html">Leistungen</a>
+<a href="preisliste.html">Preise</a>
+<a href="oeffnungszeiten.html">Öffnungszeiten</a>
+<a href="kontakt.html">Kontakt</a>
+</nav>
+
+<a href="https://wa.me/491234567890" class="bg-green-500 px-4 py-2 rounded-lg glow">WhatsApp</a>
+
+</div>
 </header>
 
-
 <!-- HERO -->
-<section class="bg-gradient-to-r from-blue-900 to-blue-700 text-white text-center py-28 px-6">
-  <h1 class="text-5xl font-extrabold mb-6">
-    PC Probleme? Wir lösen sie sofort.
-  </h1>
-  <p class="text-xl max-w-2xl mx-auto mb-8">
-    Professionelle Reparaturen, Virenentfernung & Datensicherung.
-    Schnell, zuverlässig und fair.
-  </p>
+<section class="text-center py-32 fade">
+<h1 class="text-5xl font-extrabold mb-6">PC Probleme? Wir helfen sofort ⚡</h1>
+<p class="mb-8">Reparatur • Virenentfernung • Datensicherung</p>
 
-  <div class="flex justify-center gap-4 flex-wrap">
-    <a href="kontakt.html" class="bg-white text-blue-900 px-8 py-4 rounded-xl font-semibold shadow hover:scale-105 transition">
-      Jetzt Termin buchen
-    </a>
-    <a href="preisliste.html" class="bg-blue-800 px-8 py-4 rounded-xl hover:bg-blue-600 transition">
-      Preise ansehen
-    </a>
-  </div>
+<div class="flex justify-center gap-4">
+<a href="kontakt.html" class="bg-blue-600 px-6 py-3 rounded-xl glow">Termin</a>
+<a href="preisliste.html" class="bg-white text-black px-6 py-3 rounded-xl">Preise</a>
+</div>
 </section>
 
-
-<!-- TRUST -->
-<section class="py-20 bg-white text-center">
-  <h2 class="text-3xl font-bold mb-10">Warum TechFix?</h2>
-
-  <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-    <div>
-      <p class="text-5xl font-bold text-blue-900">500+</p>
-      <p>Zufriedene Kunden</p>
-    </div>
-    <div>
-      <p class="text-5xl font-bold text-blue-900">10+</p>
-      <p>Jahre Erfahrung</p>
-    </div>
-    <div>
-      <p class="text-5xl font-bold text-blue-900">24h</p>
-      <p>Schneller Service</p>
-    </div>
-  </div>
+<!-- FEATURES -->
+<section class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto px-6 fade">
+<div class="bg-white/10 p-6 rounded-xl">Schnell</div>
+<div class="bg-white/10 p-6 rounded-xl">Zuverlässig</div>
+<div class="bg-white/10 p-6 rounded-xl">Professionell</div>
 </section>
 
-
-<!-- SERVICES -->
-<section class="py-20 px-6">
-  <h2 class="text-3xl font-bold text-center mb-12">Unsere Leistungen</h2>
-
-  <div class="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
-
-    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition">
-      <i data-lucide="cpu" class="w-10 h-10 text-blue-900 mb-4"></i>
-      <h3 class="font-bold text-xl mb-2">PC Reparatur</h3>
-      <p>Hardware & Software Probleme schnell behoben.</p>
-    </div>
-
-    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition">
-      <i data-lucide="shield" class="w-10 h-10 text-blue-900 mb-4"></i>
-      <h3 class="font-bold text-xl mb-2">Virenentfernung</h3>
-      <p>Wir entfernen Malware und schützen dein System dauerhaft.</p>
-    </div>
-
-    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition">
-      <i data-lucide="database" class="w-10 h-10 text-blue-900 mb-4"></i>
-      <h3 class="font-bold text-xl mb-2">Datensicherung</h3>
-      <p>Wichtige Daten sichern und übertragen – sicher & schnell.</p>
-    </div>
-
-  </div>
-</section>
-
-
-<!-- CTA -->
-<section class="bg-blue-900 text-white text-center py-20">
-  <h2 class="text-3xl font-bold mb-6">Brauchen Sie Hilfe?</h2>
-  <p class="mb-8">Kontaktieren Sie uns jetzt – wir helfen sofort.</p>
-
-  <a href="kontakt.html" class="bg-white text-blue-900 px-8 py-4 rounded-xl font-semibold shadow hover:scale-105 transition">
-    Jetzt Kontakt aufnehmen
-  </a>
-</section>
-
-
-<!-- FOOTER -->
-<footer class="bg-gray-900 text-white text-center p-6">
-  <p>&copy; 2025 TechFix Computerservice</p>
-</footer>
-
-<script>
-  lucide.createIcons();
-</script>
-
+<script>lucide.createIcons();</script>
 </body>
 </html>
