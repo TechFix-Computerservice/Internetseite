@@ -1,25 +1,59 @@
-<section class="py-20 px-6 max-w-7xl mx-auto">
-  <h1 class="text-4xl font-bold text-center mb-12">Unsere Leistungen</h1>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leistungen - TechFix</title>
 
-  <div class="grid md:grid-cols-3 gap-10">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+</head>
 
-    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition">
-      <i data-lucide="cpu" class="w-12 h-12 text-blue-900 mb-4"></i>
-      <h3 class="text-xl font-bold mb-2">PC Reparatur</h3>
-      <p>Wir beheben Hardware- und Softwareprobleme schnell und zuverlässig.</p>
+<body class="bg-gradient-to-br from-blue-900 via-blue-700 to-blue-500 text-white">
+
+<header class="p-6 flex justify-between items-center">
+  <h1 class="text-2xl font-bold">TechFix</h1>
+  <a href="index.html">Zurück</a>
+</header>
+
+<section class="text-center py-16">
+  <h2 class="text-4xl font-bold mb-10">Unsere Leistungen</h2>
+
+  <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto px-6">
+
+    <div class="bg-white/10 backdrop-blur p-6 rounded-2xl hover:scale-105 transition">
+      <i data-lucide="cpu" class="mx-auto mb-4"></i>
+      <h3 class="font-bold text-xl">PC Reparatur</h3>
+      <p>Hardware & Software Probleme lösen</p>
     </div>
 
-    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition">
-      <i data-lucide="shield" class="w-12 h-12 text-blue-900 mb-4"></i>
-      <h3 class="text-xl font-bold mb-2">Virenentfernung</h3>
-      <p>Entfernung von Malware, Trojanern und Viren inkl. Schutz.</p>
+    <div class="bg-white/10 backdrop-blur p-6 rounded-2xl hover:scale-105 transition">
+      <i data-lucide="shield" class="mx-auto mb-4"></i>
+      <h3 class="font-bold text-xl">Virenentfernung</h3>
+      <p>Malware & Trojaner entfernen</p>
     </div>
 
-    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition">
-      <i data-lucide="database" class="w-12 h-12 text-blue-900 mb-4"></i>
-      <h3 class="text-xl font-bold mb-2">Datensicherung</h3>
-      <p>Wir sichern und übertragen Ihre wichtigen Daten sicher.</p>
+    <div class="bg-white/10 backdrop-blur p-6 rounded-2xl hover:scale-105 transition">
+      <i data-lucide="database" class="mx-auto mb-4"></i>
+      <h3 class="font-bold text-xl">Datensicherung</h3>
+      <p>Daten sichern & übertragen</p>
+    </div>
+
+    <div class="bg-white/10 backdrop-blur p-6 rounded-2xl hover:scale-105 transition">
+      <i data-lucide="wind" class="mx-auto mb-4"></i>
+      <h3 class="font-bold text-xl">Innenreinigung</h3>
+      <p>Staub entfernen + Kühlung verbessern</p>
+    </div>
+
+    <div class="bg-white/10 backdrop-blur p-6 rounded-2xl hover:scale-105 transition">
+      <i data-lucide="download" class="mx-auto mb-4"></i>
+      <h3 class="font-bold text-xl">Software Installation</h3>
+      <p>Windows & Programme installieren</p>
     </div>
 
   </div>
 </section>
+
+<script>lucide.createIcons();</script>
+</body>
+</html>
