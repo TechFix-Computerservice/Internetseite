@@ -2,61 +2,110 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8">
-<title>Preise</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Preisliste - TechFix</title>
+
 <script src="https://cdn.tailwindcss.com"></script>
 
 <style>
-body { background:#020617; color:white; font-family:system-ui; }
-.card { background:rgba(255,255,255,0.05); padding:15px; border-radius:10px; }
+body {
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  color: white;
+  font-family: system-ui;
+}
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+}
 </style>
 </head>
 
 <body>
 
-<header class="p-4 flex justify-between">
-<b>TechFix Computerservice</b>
-<nav>
+<!-- HEADER -->
+<header class="flex justify-between items-center p-4 bg-white/10 backdrop-blur sticky top-0">
+<div class="flex items-center gap-3">
+<img src="logo.png" class="h-12 rounded-xl">
+<b class="text-xl">TechFix</b>
+</div>
+
+<nav class="hidden md:flex gap-6">
 <a href="index.html">Start</a>
 <a href="leistungen.html">Leistungen</a>
 <a href="preisliste.html">Preise</a>
 <a href="oeffnungszeiten.html">Öffnungszeiten</a>
 <a href="kontakt.html">Kontakt</a>
 </nav>
+
+<a href="https://wa.me/4915237651924" class="bg-green-500 px-4 py-2 rounded-lg">
+WhatsApp
+</a>
 </header>
 
+<!-- PREISE -->
 <section class="py-20 text-center">
 
-<h1 class="text-3xl mb-6">Preisliste</h1>
+<h1 class="text-4xl mb-10">Preisliste</h1>
 
-<div class="max-w-3xl mx-auto space-y-3">
+<div class="max-w-4xl mx-auto space-y-6">
+
+<!-- SERVICE -->
+<h2 class="text-xl mt-6">Serviceleistungen</h2>
 
 <div class="card">
 <b>Innenreinigung – 65 €</b><br>
-Reinigung des PCs inkl. Staubentfernung und Kühlungsoptimierung.<br>
-<b>Inklusive Wärmeleitpaste.</b>
+Gründliche Reinigung des PCs zur Entfernung von Staub und Schmutz.<br>
+Verbessert die Kühlung und Lebensdauer.<br>
+<b>Inklusive Austausch der Wärmeleitpaste.</b>
 </div>
 
 <div class="card">
 <b>Softwareinstallation – 30 €</b><br>
-Installation von Windows und Programmen.
+Installation von Windows (XP bis Windows 11), Treibern und Programmen.
 </div>
 
 <div class="card">
 <b>Virenbeseitigung – 25 €</b><br>
-Entfernung von Schadsoftware.
+Entfernung von Viren, Trojanern und Malware inkl. Sicherheitsprüfung.
 </div>
 
 <div class="card">
-<b>Diagnose – 40 €</b><br>
-Analyse von Fehlern und Problemen.
+<b>Problemdiagnose – 40 €</b><br>
+Analyse von Fehlern und Problemen mit anschließender Empfehlung.
+</div>
+
+<!-- HARDWARE -->
+<h2 class="text-xl mt-10">Hardware & Austausch</h2>
+
+<div class="card">
+<b>Mainboard Austausch – 100 € – 450 €</b><br>
+Austausch des Mainboards inklusive Einbau und Funktionstest.
+</div>
+
+<div class="card">
+<b>Netzteil Austausch – 50 € – 150 €</b><br>
+Ersetzen eines defekten Netzteils inklusive Einbau.
+</div>
+
+<div class="card">
+<b>SSD / HDD Austausch – 50 € – 150 €</b><br>
+Austausch oder Upgrade von Festplatten inkl. Einbau.
+</div>
+
+<div class="card">
+<b>Lüfter Austausch – 60 € – 120 €</b><br>
+Ersetzen defekter oder lauter Lüfter zur besseren Kühlung.
 </div>
 
 </div>
 
 </section>
 
+<!-- FOOTER -->
 <footer class="text-center p-6">
-<p>© 2026 TechFix Computerservice</p>
+<p>© 2025 TechFix Computerservice</p>
 <p class="text-sm">Gemäß §19 UStG keine MwSt.</p>
 </footer>
 
