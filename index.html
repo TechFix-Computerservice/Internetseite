@@ -8,16 +8,30 @@
 <script src="https://cdn.tailwindcss.com"></script>
 
 <style>
-body { font-family: system-ui; background:#020617; color:white; }
+body {
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  font-family: system-ui;
+  color: white;
+}
+
+.glow {
+  box-shadow: 0 0 25px rgba(59,130,246,0.7);
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+}
 </style>
 </head>
 
 <body>
 
-<header class="bg-white/10 backdrop-blur sticky top-0 p-4 flex justify-between">
-<b>TechFix</b>
+<!-- HEADER -->
+<header class="flex justify-between p-4 items-center bg-white/10 backdrop-blur sticky top-0">
+<b class="text-xl">TechFix</b>
 
-<nav class="space-x-4">
+<nav class="hidden md:flex gap-6">
 <a href="index.html">Start</a>
 <a href="leistungen.html">Leistungen</a>
 <a href="preisliste.html">Preise</a>
@@ -25,22 +39,83 @@ body { font-family: system-ui; background:#020617; color:white; }
 <a href="kontakt.html">Kontakt</a>
 </nav>
 
-<a href="https://wa.me/4915237651924" class="bg-green-500 px-3 py-1 rounded">WhatsApp</a>
+<a href="https://wa.me/4915237651924"
+class="bg-green-500 px-4 py-2 rounded-lg glow hover:scale-105">
+WhatsApp
+</a>
 </header>
 
-<section class="text-center py-20">
-<h1 class="text-4xl mb-4">PC Probleme? Wir helfen sofort ⚡</h1>
-<p>Reparatur • Virenentfernung • Datensicherung</p>
 
-<div class="mt-6">
-<a href="kontakt.html" class="bg-blue-600 px-4 py-2 rounded">Termin</a>
-<a href="preisliste.html" class="bg-white text-black px-4 py-2 rounded">Preise</a>
+<!-- HERO -->
+<section class="text-center py-32">
+
+<h1 class="text-5xl font-extrabold mb-6 glow">
+PC kaputt? Wir reparieren ihn schnell ⚡
+</h1>
+
+<p class="mb-10 text-lg max-w-xl mx-auto">
+Professionelle PC-Reparatur in Wolfsburg – schnell, günstig und zuverlässig.
+</p>
+
+<div class="flex justify-center gap-4 flex-wrap">
+
+<a href="kontakt.html"
+class="bg-blue-600 px-8 py-4 rounded-xl glow hover:scale-105">
+Jetzt Termin sichern
+</a>
+
+<a href="preisliste.html"
+class="bg-white text-black px-8 py-4 rounded-xl">
+Preise ansehen
+</a>
+
 </div>
 </section>
 
+
+<!-- TRUST -->
+<section class="py-20 text-center">
+
+<h2 class="text-3xl mb-10">Warum TechFix?</h2>
+
+<div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto px-6">
+
+<div class="card p-6 rounded-xl">
+<h3 class="font-bold">⚡ Schnell</h3>
+<p>Reparatur oft am selben Tag</p>
+</div>
+
+<div class="card p-6 rounded-xl">
+<h3 class="font-bold">💰 Fair</h3>
+<p>Transparente Preise ohne versteckte Kosten</p>
+</div>
+
+<div class="card p-6 rounded-xl">
+<h3 class="font-bold">🛠️ Profi</h3>
+<p>Erfahrung & Fachwissen</p>
+</div>
+
+</div>
+</section>
+
+
+<!-- CTA -->
+<section class="text-center py-20">
+
+<h2 class="text-3xl mb-6">Jetzt Hilfe bekommen</h2>
+
+<a href="https://wa.me/4915237651924"
+class="bg-green-500 px-8 py-4 rounded-xl glow hover:scale-105">
+Direkt WhatsApp schreiben
+</a>
+
+</section>
+
+
+<!-- FOOTER -->
 <footer class="text-center p-6">
-<p>© 2025 TechFix</p>
-<p>Gemäß §19 UStG keine MwSt.</p>
+<p>© 2026 TechFix</p>
+<p class="text-sm">Gemäß §19 UStG keine MwSt.</p>
 </footer>
 
 </body>
