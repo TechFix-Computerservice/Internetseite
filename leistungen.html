@@ -7,42 +7,57 @@
 
 <style>
 body { background:#020617; color:white; font-family:system-ui; }
-.glow { box-shadow:0 0 20px rgba(59,130,246,0.6); }
-.card { background:rgba(255,255,255,0.05); backdrop-filter:blur(10px); }
+.card { background:rgba(255,255,255,0.05); padding:20px; border-radius:12px; }
 </style>
 </head>
 
 <body>
 
-<header class="flex justify-between items-center p-4 bg-white/10 backdrop-blur sticky top-0">
-<div class="flex items-center gap-3">
-<img src="logo.png" class="h-12 glow rounded-xl">
-<b>TechFix</b>
-</div>
-
-<nav class="hidden md:flex gap-6">
+<header class="p-4 flex justify-between">
+<b>TechFix Computerservice</b>
+<nav>
 <a href="index.html">Start</a>
 <a href="leistungen.html">Leistungen</a>
 <a href="preisliste.html">Preise</a>
 <a href="oeffnungszeiten.html">Öffnungszeiten</a>
 <a href="kontakt.html">Kontakt</a>
 </nav>
-
-<a href="https://wa.me/4915237651924" class="bg-green-500 px-4 py-2 rounded glow">WhatsApp</a>
 </header>
 
-<section class="text-center py-20">
+<section class="py-20 text-center">
+
 <h1 class="text-4xl mb-10">Unsere Leistungen</h1>
 
-<div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto px-6">
+<div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
 
-<div class="card p-6 rounded-xl">PC Reparatur</div>
-<div class="card p-6 rounded-xl">Virenentfernung</div>
-<div class="card p-6 rounded-xl">Datensicherung</div>
-<div class="card p-6 rounded-xl">Innenreinigung</div>
-<div class="card p-6 rounded-xl">Softwareinstallation</div>
+<div class="card">
+<b>PC Reparatur</b><br>
+Behebung von Hardware- und Softwareproblemen, Fehleranalyse und schnelle Reparatur.
+</div>
+
+<div class="card">
+<b>Virenentfernung</b><br>
+Entfernung von Viren und Malware sowie Sicherheitsprüfung des Systems.
+</div>
+
+<div class="card">
+<b>Datensicherung</b><br>
+Sicherung wichtiger Daten und Übertragung auf neue Systeme.
+</div>
+
+<div class="card">
+<b>Innenreinigung</b><br>
+Reinigung des PCs zur besseren Kühlung.<br>
+<b>Inklusive neuer Wärmeleitpaste.</b>
+</div>
+
+<div class="card">
+<b>Softwareinstallation</b><br>
+Installation von Windows, Programmen und Treibern.
+</div>
 
 </div>
+
 </section>
 
 <footer class="text-center p-6">
