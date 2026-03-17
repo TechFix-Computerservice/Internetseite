@@ -10,26 +10,22 @@
 <style>
 body {
   background: radial-gradient(circle at top, #0f172a, #020617);
-  font-family: system-ui;
   color: white;
+  font-family: system-ui;
 }
-
-.glow {
-  box-shadow: 0 0 25px rgba(59,130,246,0.7);
-}
-
-.card {
-  background: rgba(255,255,255,0.05);
-  backdrop-filter: blur(10px);
-}
+.glow { box-shadow: 0 0 20px rgba(59,130,246,0.7); }
+.card { background: rgba(255,255,255,0.05); backdrop-filter: blur(10px); }
 </style>
 </head>
 
 <body>
 
 <!-- HEADER -->
-<header class="flex justify-between p-4 items-center bg-white/10 backdrop-blur sticky top-0">
+<header class="flex justify-between items-center p-4 bg-white/10 backdrop-blur sticky top-0">
+<div class="flex items-center gap-3">
+<img src="logo.png" class="h-12 rounded-xl glow">
 <b class="text-xl">TechFix</b>
+</div>
 
 <nav class="hidden md:flex gap-6">
 <a href="index.html">Start</a>
@@ -39,82 +35,39 @@ body {
 <a href="kontakt.html">Kontakt</a>
 </nav>
 
-<a href="https://wa.me/4915237651924"
-class="bg-green-500 px-4 py-2 rounded-lg glow hover:scale-105">
-WhatsApp
-</a>
+<a href="https://wa.me/4915237651924" class="bg-green-500 px-4 py-2 rounded-lg glow">WhatsApp</a>
 </header>
-
 
 <!-- HERO -->
 <section class="text-center py-32">
-
 <h1 class="text-5xl font-extrabold mb-6 glow">
-PC kaputt? Wir reparieren ihn schnell ⚡
+PC kaputt? Wir helfen sofort ⚡
 </h1>
 
-<p class="mb-10 text-lg max-w-xl mx-auto">
-Professionelle PC-Reparatur in Wolfsburg – schnell, günstig und zuverlässig.
+<p class="mb-10 max-w-xl mx-auto">
+Reparaturen, Virenentfernung und Datensicherung in Wolfsburg
 </p>
 
-<div class="flex justify-center gap-4 flex-wrap">
-
-<a href="kontakt.html"
-class="bg-blue-600 px-8 py-4 rounded-xl glow hover:scale-105">
-Jetzt Termin sichern
-</a>
-
-<a href="preisliste.html"
-class="bg-white text-black px-8 py-4 rounded-xl">
-Preise ansehen
-</a>
-
+<div class="flex justify-center gap-4">
+<a href="kontakt.html" class="bg-blue-600 px-6 py-3 rounded-xl glow">Termin sichern</a>
+<a href="preisliste.html" class="bg-white text-black px-6 py-3 rounded-xl">Preise ansehen</a>
 </div>
 </section>
-
 
 <!-- TRUST -->
 <section class="py-20 text-center">
-
 <h2 class="text-3xl mb-10">Warum TechFix?</h2>
 
 <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto px-6">
-
-<div class="card p-6 rounded-xl">
-<h3 class="font-bold">⚡ Schnell</h3>
-<p>Reparatur oft am selben Tag</p>
-</div>
-
-<div class="card p-6 rounded-xl">
-<h3 class="font-bold">💰 Fair</h3>
-<p>Transparente Preise ohne versteckte Kosten</p>
-</div>
-
-<div class="card p-6 rounded-xl">
-<h3 class="font-bold">🛠️ Profi</h3>
-<p>Erfahrung & Fachwissen</p>
-</div>
-
+<div class="card p-6 rounded-xl">⚡ Schnell</div>
+<div class="card p-6 rounded-xl">💰 Faire Preise</div>
+<div class="card p-6 rounded-xl">🛠️ Professionell</div>
 </div>
 </section>
-
-
-<!-- CTA -->
-<section class="text-center py-20">
-
-<h2 class="text-3xl mb-6">Jetzt Hilfe bekommen</h2>
-
-<a href="https://wa.me/4915237651924"
-class="bg-green-500 px-8 py-4 rounded-xl glow hover:scale-105">
-Direkt WhatsApp schreiben
-</a>
-
-</section>
-
 
 <!-- FOOTER -->
 <footer class="text-center p-6">
-<p>© 2026 TechFix</p>
+<p>© 2026 TechFix Computerservice</p>
 <p class="text-sm">Gemäß §19 UStG keine MwSt.</p>
 </footer>
 
