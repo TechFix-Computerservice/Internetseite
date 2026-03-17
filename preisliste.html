@@ -4,9 +4,14 @@
 <meta charset="UTF-8">
 <title>Preise</title>
 <script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+body { background:#020617; color:white; font-family:system-ui; }
+.card { background:rgba(255,255,255,0.05); padding:15px; border-radius:10px; }
+</style>
 </head>
 
-<body class="bg-gray-900 text-white">
+<body>
 
 <header class="p-4 flex justify-between">
 <b>TechFix</b>
@@ -23,21 +28,24 @@
 
 <h1 class="text-3xl mb-6">Preisliste</h1>
 
-<p>Innenreinigung – 65 €</p>
-<p>Softwareinstallation – 30 €</p>
-<p>Virenbeseitigung – 25 €</p>
-<p>Diagnose – 40 €</p>
+<div class="max-w-3xl mx-auto space-y-3">
 
-<p>Mainboard – 100–450 €</p>
-<p>Netzteil – 50–150 €</p>
-<p>SSD/HDD – 50–150 €</p>
-<p>Lüfter – 60–120 €</p>
+<div class="card">Innenreinigung – 65 €</div>
+<div class="card">Softwareinstallation – 30 €</div>
+<div class="card">Virenbeseitigung – 25 €</div>
+<div class="card">Diagnose – 40 €</div>
 
+<div class="card">Mainboard – 100–450 €</div>
+<div class="card">Netzteil – 50–150 €</div>
+<div class="card">SSD/HDD – 50–150 €</div>
+<div class="card">Lüfter – 60–120 €</div>
+
+</div>
 </section>
 
 <footer class="text-center p-6">
-<p>© TechFix</p>
-<p>Gemäß §19 UStG keine MwSt.</p>
+<p>© 2026 TechFix Computerservice</p>
+<p class="text-sm">Gemäß §19 UStG keine MwSt.</p>
 </footer>
 
 </body>
